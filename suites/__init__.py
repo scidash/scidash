@@ -1,22 +1,13 @@
+import sys
+
 from sciunit import TestSuite
-from ..tests.__init__ import *
 
-suites = []
+import tests as t # Tests should be on path if run from 'sciunit run'
 
-babylon = SolarYear(365.0)
+babylon = TestSuite(tests=t.babylon, name='Babylon')
+brahe = TestSuite(tests=t.brahe, name='Brahe')
+bessel = TestSuite(tests=t.bessel, name='Bessel')
+leverrier = TestSuite(tests=t.leverrier, name='Leverrier')
 
-brahe = OrbitalEccentricity({'Mars':0.093})
-
-galileo = MoonCounts({'Jupiter':4})
-
-bessel = StellarParallax({'61 Cygni':0.3136})
-"""Friedrich Bessel in 1838 for the star 61 Cygni using a heliometer.
-Bessel, Friedrich
-"Bestimmung der Entfernung des 61sten Sterns des Schwans"
-Astronomische Nachrichten, 16, 65-96 (1838)"""
-
-leverrier = PerihelionPrecession({'Mercury':574.10})
-
-legends = TestSuite([babylon,brahe,galileo,bessel,leverrier])
-
-suites.append(legends)
+# Set these test suites to be applied to all models
+suites = [babylon, brahe, bessel, leverrier]

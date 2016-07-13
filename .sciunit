@@ -1,0 +1,15 @@
+[misc]
+config-version = 1.0
+
+[root]
+path = .
+
+[models]
+module = models
+
+[tests]
+module = tests
+
+[suites]
+module = suites
+

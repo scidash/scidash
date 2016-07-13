@@ -1,19 +1,22 @@
 from sciunit import Capability
 
+
 class HasSun(Capability):
     def solar_days(self):
-        raise NotImplemented("")
+        return self.unimplemented()
+
 
 class HasStars(Capability):
     def stellar_parallax(self,star):
-        raise NotImplemented("")
+        return self.unimplemented()
+
 
 class HasPlanets(Capability):
     def orbital_eccentricity(self,planet):
-        raise NotImplemented("")
+        return self.unimplemented()
 
     def num_moons(self,planet):
-        raise NotImplemented("")
+        return self.unimplemented()
 
     def perihelion_precession_rate(self,planet):
-        raise NotImplemented("")
+        return self.unimplemented()
