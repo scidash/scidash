@@ -86,7 +86,7 @@ class Newton(Kepler):
             
     def perihelion_precession_rate(self, planet):
         if planet == 'Mercury':
-            return 531.63 * pq.Hz
+            return (531.63 * pq.arcsecond)/(100.0 * pq.year)
         else:
             return _CosmoModel.perihelion_precession_rate(self,planet)
 
@@ -105,7 +105,7 @@ class Einstein(Newton):
     
     def perihelion_precession_rate(self, planet):
         if planet == 'Mercury':
-            return 574.10 * pq.Hz
+            return (574.10 * pq.arcsecond)/(100.0 * pq.year)
         else:
             return _CosmoModel.perihelion_precession_rate(self,planet)
 

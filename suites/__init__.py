@@ -2,7 +2,7 @@ import sys
 
 from sciunit import TestSuite
 
-import tests as t # Tests should be on path if run from 'sciunit run'
+import tests as t # 'tests' should be on path if run from 'sciunit run'
 
 babylon = TestSuite(tests=t.babylon, name='Babylon')
 brahe = TestSuite(tests=t.brahe, name='Brahe')

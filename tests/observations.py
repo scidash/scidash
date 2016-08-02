@@ -10,7 +10,7 @@ eccentricity = {'Mars':0.093,
                }
 
 # Perihelion precessions
-precession = {'Mercury':(600 * pq.arcsecond)/(100.0 * pq.year),
+precession = {'Mercury':(574.10 * pq.arcsecond)/(100.0 * pq.year),
              }
 
 # Stellar parallaxes

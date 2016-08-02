@@ -37,7 +37,7 @@ class _CosmoTest(sciunit.Test):
         if isinstance(self,_CosmoEntityTest):
             obs = obs[1]
         error = RatioScore.compute(obs,pred)
-        score = RangeToBoolean(0.9,1.1).convert(error)
+        score = RangeToBoolean(0.97,1.03).convert(error) # +/- 3% of observed
         return score
 
 

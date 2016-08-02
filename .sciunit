@@ -1,5 +1,6 @@
 [misc]
 config-version = 1.0
+nb-name = notebook
 
 [root]
 path = .
