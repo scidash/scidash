@@ -5,7 +5,8 @@ import inspect
 
 import quantities as pq
 
-from sciunit import Model,PredictionError
+from sciunit import Model
+from sciunit.errors import PredictionError
 import capabilities as cap
 
 
