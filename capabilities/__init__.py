@@ -2,7 +2,7 @@ from sciunit import Capability
 
 
 class HasSun(Capability):
-    def solar_days(self):
+    def solar_year_duration(self):
         return self.unimplemented()
 
 
